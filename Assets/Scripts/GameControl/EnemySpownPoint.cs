@@ -24,7 +24,7 @@ public class EnemySpownPoint : MonoBehaviour
         if (enemy && !enemy.activeSelf)
         {
             enemy = null;
-            Invoke("SpownItem", respownTime);
+            Invoke("SpownEnemy", respownTime);
         }
     }
 

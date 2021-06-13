@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //базовые параметры
+    public int health;
     public float reloadTime;
     public float speedMove;
     public float speedRotation;
@@ -105,11 +106,11 @@ public class PlayerController : MonoBehaviour
             grenadeStartVelocity = Mathf.Sqrt(Mathf.Abs(pow2));
 
 
-            Vector3[] points = new Vector3[128];
+            Vector3[] points = new Vector3[64];
             lineRenderer.positionCount = points.Length;
             for (int i = 0; i < points.Length; i++)
             {
-                float time = i * 0.05f;
+                float time = i * 0.1f;
                 points[i] = origin + (GgrenadeSpounPoint.forward * grenadeStartVelocity) * time + Physics.gravity * time * time / 2f;
                 if (points[i].y < hit.point.y &&
                     Vector3.Distance(GgrenadeSpounPoint.position, hit.point) < Vector3.Distance(GgrenadeSpounPoint.position, points[i]))

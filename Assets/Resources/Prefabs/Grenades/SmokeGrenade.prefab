@@ -98,6 +98,7 @@ MonoBehaviour:
   isTactics: 1
   damade: 0
   radius: 2
+  power: 0
   effectsPath: Prefabs/VEffects/
   effectName: SmokeExplosion
 --- !u!65 &1661156341709073206

@@ -8,6 +8,7 @@ public class Grenade : MonoBehaviour
     public bool isTactics;
     public int damade = 3;
     public int radius = 2;
+    public int power = 2;
     public string effectsPath;
     public string effectName;
     private GameObject effect;
@@ -53,7 +54,12 @@ public class Grenade : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit) && coll.gameObject == hit.transform.gameObject)
             {
-                   coll.gameObject.SendMessage("DamageReceiver", damade);
+                coll.gameObject.SendMessage("DamageReceiver", damade);
+                Rigidbody rb;
+                if(coll.TryGetComponent<Rigidbody>(out rb))
+                {
+                    rb.AddForce(-(transform.position - coll.transform.position) * (power * (1/Mathf.Pow(Vector3.Distance(transform.position, coll.transform.position), 2))), ForceMode.Impulse);
+                }
             }
                 
         }

@@ -95,8 +95,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: ExplosiveGrenade
+  isTactics: 0
   damade: 45
   radius: 5
+  power: 6
   effectsPath: Prefabs/VEffects/
   effectName: ExplosiveExplosion
 --- !u!65 &5110980808776331090

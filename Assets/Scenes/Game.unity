@@ -862,7 +862,7 @@ MonoBehaviour:
   findTargetByTag: 1
   speed: 5
   targetTag: Player
-  cameraOffset: {x: -5, y: 8.01, z: -6.5}
+  cameraOffset: {x: -5, y: 10, z: -6.5}
   target: {fileID: 0}
 --- !u!1 &236264750
 GameObject:

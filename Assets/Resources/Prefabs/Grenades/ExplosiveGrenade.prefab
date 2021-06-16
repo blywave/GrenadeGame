@@ -98,7 +98,7 @@ MonoBehaviour:
   isTactics: 0
   damade: 45
   radius: 5
-  power: 6
+  power: 4
   effectsPath: Prefabs/VEffects/
   effectName: ExplosiveExplosion
 --- !u!65 &5110980808776331090

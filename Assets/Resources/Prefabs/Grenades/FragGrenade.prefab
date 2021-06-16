@@ -98,7 +98,7 @@ MonoBehaviour:
   isTactics: 0
   damade: 30
   radius: 7
-  power: 2
+  power: 3
   effectsPath: Prefabs/VEffects/
   effectName: FragExplosion
 --- !u!65 &1661156341709073206

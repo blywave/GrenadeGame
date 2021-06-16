@@ -537,8 +537,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5671014466767785869}
   - component: {fileID: 5671014466767785867}
-  - component: {fileID: 5671014466767785868}
   - component: {fileID: 5671014466767785870}
+  - component: {fileID: -4750519549382185842}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Destructible
@@ -579,19 +579,6 @@ MonoBehaviour:
   healthBarLine: {fileID: 5671014465796795548}
   folderPath: Prefabs/VEffects/
   textPrefabName: DamageText
---- !u!65 &5671014466767785868
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671014466767785871}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.9, z: 0.4}
-  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!54 &5671014466767785870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -600,11 +587,25 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5671014466767785871}
   serializedVersion: 2
-  m_Mass: 0.5
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_Mass: 1
+  m_Drag: 0.3
+  m_AngularDrag: 1.6
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!136 &-4750519549382185842
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671014466767785871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.25, z: 0}

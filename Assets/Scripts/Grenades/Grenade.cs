@@ -14,7 +14,7 @@ public class Grenade : MonoBehaviour
     private GameObject effect;
     private GameObject gameController;
     private Rigidbody rigidbody;
-    private BoxCollider collider;
+    private Collider collider;
     private ObjectsPoolController pool;
     private bool enabled = false;
     void Start()
@@ -22,7 +22,7 @@ public class Grenade : MonoBehaviour
         gameObject.name = name;
         gameController = GameObject.FindGameObjectWithTag("GameController");
         rigidbody = transform.GetComponent<Rigidbody>();
-        collider = transform.GetComponent<BoxCollider>();
+        collider = transform.GetComponent<Collider>();
         pool = gameController.GetComponent<ObjectsPoolController>();
     }
 
